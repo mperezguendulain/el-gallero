@@ -1,0 +1,17 @@
+<div class="center-vh bg-gallo">
+	<div class="login-form">
+		<form>
+			<input 
+				type="text" 
+				placeholder="Nombre de usuario"
+				[(ngModel)]="this.model.username" 
+				name="username"/>
+			<input 
+				type="password" 
+				placeholder="Contraseña"
+				[(ngModel)]="this.model.password" 
+				name="password"/>
+		</form>
+		<button class="btn-gallo" (click)="this.login()">Ingresar</button>
+	</div>
+</div>
